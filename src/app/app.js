@@ -202,14 +202,14 @@ export default class App extends React.Component
     render()
     {
         return (
-            <div id='main'>
+            <>
                 <Helmet>
-                    <title>The Dismal Den</title>
+                    <title>The Dismal Downs</title>
                 </Helmet>
                 <Nav />
                 <Body />
                 <Footer />
-            </div>
+            </>
         )
     }
 };

@@ -2,7 +2,6 @@ import React from 'react'
 import ToggleImage from '../app/ui/ToggleImage.js'
 import PopLink from '../app/ui/PopLink.js'
 import { BlockMath, InlineMath } from 'react-katex'
-import ReactMarkdown from 'react-markdown/with-html'
 
 
 
@@ -15,12 +14,12 @@ export default function(props) {
     const vortexAlt = ['Vortex motion', 'Vortex motion'];
 
     const quantizedVortexDesc = <span>This follows from the demand that the superfluid state <InlineMath>\psi</InlineMath> be
-        univalued. To see that, it's useful to write the state in polar rep - <InlineMath>\psi = \rho e^\phi</InlineMath>.
-        We take the Lagrangian to be that of a massive <InlineMath>\phi^4</InlineMath> field and
+        univalued. To see that, it's useful to write the state in polar rep - <InlineMath>\psi = \rho \exp(i\phi)</InlineMath>.
+        We take the Lagrangian to be that of a massive <InlineMath>\phi^4</InlineMath> model and
         find that global <InlineMath>U(1)</InlineMath> invariance yields a symmetry current
         <InlineMath>\ j \propto \nabla\phi</InlineMath>.
         e.g. the superfluid velocity is proportional to the gradient of the phase(we could also just appeal to the probability
-        current). If we now calculate the vorticity <InlineMath>\omega</InlineMath> around some closed curve <InlineMath>\Gamma</InlineMath>, we find
+        current to see that). If we now calculate the vorticity <InlineMath>\omega</InlineMath> around some closed curve <InlineMath>\Gamma</InlineMath>, we find
         <InlineMath>\ \omega \propto \oint_\Gamma \nabla\phi\ ds \propto \phi(a) - \phi(a+2\pi) = 2\pi n</InlineMath>, where the last
         equality follows precisely because the phase can differ only by an integer multiple of <InlineMath>2\pi</InlineMath> at some point <InlineMath>a\ </InlineMath>
         if the state <InlineMath>\psi</InlineMath> is to be univalued. </span>

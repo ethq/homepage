@@ -11,7 +11,7 @@ export default function(props) {
                     of quantum theory. As examples, I like quantum computation, foundational aspects(which I wrote
                     my thesis on) and particle physics. I also find the power of programming fun - whether it's to
                     help me solve problems(artificial and otherwise) or to realize my ideas. If not stuck in front of a PC, I prefer to spend my
-                     time with various kinds of torture devices. Specifically various kinds of bikes, skis, kayaks,
+                     time with various kinds of torture devices. Specifically bikes, skis, kayaks,
                      tents and sleeping bags.
                     </span>
                     <img className="fr" src="/images/eg.jpg" alt="Zak Laberg" />

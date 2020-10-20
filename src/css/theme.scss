@@ -1,0 +1,20 @@
+@font-face {
+    font-family: LoveNature;
+    src: local('LoveNature'), url('../fonts/LoveNature.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: TitilliumRegular;
+    src: local('TitilliumWeb-Regular'), url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+$grey-soft: #f7f7f7;
+$grey-medium: #484a59;
+$grey-hard: #21232a;
+
+$black-soft: #6d6d6d;
+$black-hard: #1a1a1a;
+
+$white-soft: #ececec;
+
+$blue-soft: #75d7fa;

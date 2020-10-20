@@ -28,8 +28,8 @@ export default function(props) {
                     there are some disturbing points. One of the features of quantum theory is that systems are allowed
                     to exist in states of multiple potentialities. A quantum car may for example be in a state of either
                     being in Oslo or in Sydney. Exactly where it is located is undetermined until someone looks to check. A big
-                    problem is that this is <b>not</b> how our cars behave! Another is that this <b>looking</b> is not precisely defined.
-                    So - although you <b>can</b> look at the car and it turns up
+                    problem is that this is <em>not</em> how our cars behave! Another is that this <em>looking</em> is not precisely defined.
+                    So - although you <em>can</em> look at the car and it turns up
                     in either Oslo or Sydney, you cannot calculate when it should appear. This sad <PopLink link="mismatch" content={mismatch}/> between
                     theory and practice is usually referred to as the measurement problem.
                     </span>

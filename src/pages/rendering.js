@@ -18,8 +18,8 @@ export default function(props) {
                     a demo of my rendering engine, showing dynamic point light shadows.
 
                     Unfortunately, that's where it stopped, as the bottomless pit of features I wanted for my game
-                    led me to Unity, which in turn led me to design art assets. I am abysmally awfully terrible at art,
-                    so that's the end - for now.
+                    led me to Unity, which in turn led me to design art assets. I am a terrible artist, so that has
+                    put a momentary stop to things.
                     </span>
                 </div>
             </div>

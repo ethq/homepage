@@ -9,7 +9,7 @@ export default class ToggleImage extends React.Component
         super(props);
 
         this.state = {
-            currentState: this.props.currentState ? this.props.currentState : 1,
+            currentState: this.props.currentState ? this.props.currentState : 0,
             buttonText: this.props.buttonText ? this.props.buttonText : ['start', 'stop']
         };
 
@@ -27,7 +27,7 @@ export default class ToggleImage extends React.Component
             <div className={"toggleImage " + this.props.className}>
                 <img src={this.props.image[this.state.currentState]} alt={this.props.imageAlt[this.state.currentState]} />
                 <div
-                    className={this.state.currentState ? 'buttonOn' : 'buttonOff'}
+                    className={this.state.currentState ? 'noselect buttonOn' : 'noselect buttonOff'}
                     onClick={this.handleClick}
                 >
                     {this.state.buttonText[this.state.currentState]}
