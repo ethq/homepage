@@ -1,8 +1,9 @@
 import React from 'react'
+import LazyImage from '../app/ui/LazyImage.js'
 
 export default function(props) {
     return (
-        <div>
+        <>
             <div className="bodyHeader baseline">Me</div>
             <div className="bodyText">
                 <div>
@@ -14,11 +15,11 @@ export default function(props) {
                      time with various kinds of torture devices. Specifically bikes, skis, kayaks,
                      tents and sleeping bags.
                     </span>
-                    <img className="fr" src="/images/eg.jpg" alt="Zak Laberg" />
+                    <LazyImage src='/images/egog.jpg' width='248' height='331' />
 
                     <span>If you'd like to get in touch, you can reach me at <b>zak.laberg@gmail.com</b> or <b>902 38 791</b>.</span>
                 </div>
             </div>
-        </div>
+        </>
     );
 };

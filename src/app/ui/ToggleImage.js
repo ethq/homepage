@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyImage from './LazyImage.js'
 
 /* todo: add loading for gifs */
 

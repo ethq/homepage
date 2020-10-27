@@ -7,6 +7,7 @@ html {
     font-weight: 400;
     min-height: 100%; /* equal viewport size */
     position: relative;
+    height: 100%;
 }
 
 body {
@@ -47,12 +48,6 @@ nav {
     color: $white-soft;
     text-rendering: optimizeLegibility;
     line-height: 1.6em;
-}
-
-#body > div
-{
-    background-color: $grey-hard;
-    min-height: 110%;
 }
 
 nav .button {
@@ -110,6 +105,7 @@ nav li {
     padding: 3px;
 }
 
+
 .baseline
 {
     height:40px;
@@ -137,6 +133,8 @@ nav li {
 .bodyText > div
 {
     padding: 20px;
+    background-color: $grey-hard;
+    min-height: 200%;
 }
 
 .bodyText > div > span
@@ -162,6 +160,36 @@ nav li {
     margin-top:0;
     width: 20%;
     height: auto;
+}
+
+.lazyimage
+{
+    opacity: 0;
+}
+.fadeout
+{
+
+    transition: opacity .4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    opacity: 0;
+}
+
+.fadein
+{
+    transition: opacity .4s ease-in;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    opacity: 1;
+}
+
+svg
+{
+    fill: red;
 }
 
 .toggleImage
