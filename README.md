@@ -1,3 +1,3 @@
-todo: make sure dependencies check out  <br/>
-todo: factor css  <br/>
-todo: add loading icon for images/gifs  
+Todo: make sure dependencies check out on laptop <br/>
+Todo: factor css  <br/>
+Todo: redo layout using flexbox, minsize images
