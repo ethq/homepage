@@ -10,7 +10,7 @@ export default function(props) {
             <div className="bodyHeader baseline">Rendering</div>
             <div className="bodyText">
                 <div>
-                    <span><ToggleImage className="fr" image={cubeImage} imageAlt={cubeImageAlt} />
+                    <span><ToggleImage className="fr" image={cubeImage} imageAlt={cubeImageAlt} width={339} height={171} />
                     I always enjoy deepening my understanding. I also really like making games. Years ago, I made
                     these in Flash. When I felt I had exhausted the possibilities of Flash, I was tempted to learn
                     how to write my own rendering code. Back then, it was too tough for me. But in the last year I

@@ -49,7 +49,7 @@ export default function(props) {
                     </span>
 
                     <span>
-                    <ToggleImage className="fr" image={gpeImage} imageAlt={gpeImageAlt} />
+                    <ToggleImage className="fr" image={gpeImage} imageAlt={gpeImageAlt} width={226} height={283} />
                     Although there are of course
                     many reasons to study quantum turbulence, one hope is that it may be used to gain understanding about classical turbulence as well.
                     The benefit of studying the quantum version is that it is easier - at least for fluids cooled close to absolute zero.
@@ -67,7 +67,7 @@ export default function(props) {
                     <div className="clearMe"/>
 
                     <span>
-                    <ToggleImage className="fl" image={vortexImage} imageAlt={vortexAlt} />
+                    <ToggleImage className="fl" image={vortexImage} imageAlt={vortexAlt} width={327} height={292} />
                     During my time as a doctoral student, I spent a lot of time with these superfluids. In particular I looked
                     at the emergence of large-scale structures in fluids confined to some given volume, as predicted by L. Onsager.
                     He gave an elegant <PopLink link="argument " content={onsagerArgument} /> that there must exist an energy threshold above which the <i>order</i> of the

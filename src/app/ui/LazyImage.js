@@ -9,13 +9,19 @@ export default function({src, alt, width, height}) {
         return getGcd(b, a % b);
     }
 
+    if (!width || !height)
+    {
+        width = 1;
+        height = 1;
+        console.log('Warning: no width/height supplied to LazyImage. Defaults to 1x1, will reflow.');
+    }
     const gcd = getGcd(width, height);
 
     const ratioW = width / gcd;
     const ratioH = height / gcd;
 
     // Note urlescaping of <># etc. Set style="background: %23484a59" to make viewbox visible, but more elegant to not have it there I think.
-    const placeholder = `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 ${ratioW} ${ratioH}"%3E%3C/svg%3E`;
+    const placeholder = `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ratioW} ${ratioH}"%3E%3C/svg%3E`;
     const [source, setSource] = useState(placeholder);
     const [fade, setFade] = useState('lazyimage');
 

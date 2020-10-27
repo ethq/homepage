@@ -15,6 +15,15 @@ export default class ToggleImage extends React.Component
         };
 
         this.handleClick = this.handleClick.bind(this);
+
+        this.preload();
+    }
+
+    preload()
+    {
+        const im = new Image();
+        im.src = this.props.image[(this.state.currentState + 1) % 2];
+        im.onload = () => console.log('Preloaded image: ' + im.src);
     }
 
     handleClick()
@@ -26,7 +35,7 @@ export default class ToggleImage extends React.Component
     {
         return (
             <div className={"toggleImage " + this.props.className}>
-                <img src={this.props.image[this.state.currentState]} alt={this.props.imageAlt[this.state.currentState]} />
+                <LazyImage src={this.props.image[this.state.currentState]} alt={this.props.imageAlt[this.state.currentState]} width={this.props.width} height={this.props.height} />
                 <div
                     className={this.state.currentState ? 'noselect buttonOn' : 'noselect buttonOff'}
                     onClick={this.handleClick}
